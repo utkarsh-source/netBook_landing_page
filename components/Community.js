@@ -62,6 +62,7 @@ function Community() {
         {CommunityCardDetail.map(({ heading, text, image }, index) => {
           return (
             <CommunityCard
+              key={index}
               data-aos={index % 2 ? "fade-left" : "fade-right"}
               data-aos-duration={700}
             >

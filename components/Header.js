@@ -28,9 +28,9 @@ const Header = () => {
       </div>
       <nav>
         <ul>
-          {navMenu.map((navItem) => {
+          {navMenu.map((navItem, index) => {
             return (
-              <li>
+              <li key={index}>
                 {navItem.to}
                 {navItem.withDropdown && <RiArrowDownSLine />}
               </li>
