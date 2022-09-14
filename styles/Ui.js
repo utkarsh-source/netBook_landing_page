@@ -123,6 +123,7 @@ export const Button = styled.button`
   align-items: center;
   column-gap: 5px;
   color: pointer;
+  cursor: pointer;
   @media ${devices.mobileL} {
     padding: 10px 15px;
     border-radius: 10px;

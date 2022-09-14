@@ -47,18 +47,22 @@ export const BannerSection = styled.section`
         text-align: center;
       }
       & > span {
+        font-size: clamp(0.8rem, 2.5vw, 1.2rem);
         width: max-content;
         color: ${(props) => props.theme.waterBlue};
         background-color: ${(props) => props.theme.lightBlue};
-        padding: 8px 24px;
+        padding: 1rem 2.8rem;
         margin-bottom: 10px;
         border-radius: 4px;
       }
       & > h1 {
         font-weight: 600;
-        font-size: clamp(3.5rem, 5.5vw, 4rem);
-        line-height: clamp(3.5rem, 6.3vw, 5rem);
+        font-size: clamp(3.5rem, 5vw, 6rem);
+        line-height: clamp(3.5rem, 6.3vw, 7rem);
         margin: 30px 0;
+        @media ${devices.desktop} {
+          margin: 10px 0;
+        }
       }
       & > p {
         font-size: 1.8rem;
